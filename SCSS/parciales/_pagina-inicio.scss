@@ -1,0 +1,206 @@
+*{
+   padding: 0%;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   color:$color-letra;
+   width: $ancho;
+   height: $alto;
+   font-size: 15px;
+   background: $fondo-principal;
+   background: $fondo-principal;
+   font-family: 'Inter', sans-serif;
+}  
+.main{
+   padding-top: 100px;
+}
+.imagen__carrousel{
+width: 100%;
+height: 100%;
+}
+.section2{
+   width: 100%;
+   height: 100%;
+   border-top: 25px solid rgb(26, 26, 26);
+   padding: 1rem;
+   margin-bottom: 2rem;
+   display: grid;
+   grid-template-columns: repeat(2fr);
+   grid-template-rows: repeat(3fr);
+   grid-template-areas:
+   "elem1 elem1"
+   "elem2 elem3"
+   "elem4 elem5";
+
+   &__titulo{
+      font-family: 'Inter', sans-serif;
+      grid-area: elem1;
+      text-align: center;
+      font-size: 35px;
+      padding: 2rem;
+      text-shadow: 3px 3px 5px rgb(78, 70, 70);
+   }
+   &__categoria1{
+      min-width: 100px;
+      min-height: 50px;
+      grid-area: elem2;
+      margin: 2rem;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 35px;
+      text-decoration: underline;
+   }
+   &__categoria2{ 
+      min-width: 100px;
+      min-height: 50px;
+      grid-area: elem3;
+      margin: 2rem;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 35px;
+      text-decoration: underline;
+   }
+
+   &__div1{
+      width: 450px;
+      height: 250px;
+      grid-area: elem4;
+      border-radius: 15px;
+      border: 2px double white;
+      transition: 1s;
+   }
+   &__div1:hover{
+      transform: scale(0.9);
+   }
+   &__div2{
+      width: 450px;
+      height: 250px;
+      grid-area: elem5;
+      border-radius: 55px;
+      border: 2px double white;
+      transition: 1s;
+   }
+   &__div2:hover{
+      transform: scale(0.9);
+   }
+}
+.section3{
+   border: 2px black solid;
+   width: $ancho;
+   min-height: 100px;
+   background-color: white;
+   color: black;
+   padding: 50px;
+
+   &__imagen{
+      width: 250px;
+      height: 250px;
+   }
+   &__titulo{
+      text-align: center;
+      font-size: 35px;
+   }
+   &__parrafo{
+      text-align: center;
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+   }
+}
+.separador{
+   margin: 0px;
+   padding: 10px;
+   font-family: 'Inter', sans-serif;
+   font-size: 55px;
+   font-weight: 600;
+   text-shadow: 2px 2px 3px white;
+   background-color: grey;
+   color:black;
+}
+.section4{
+   min-height: 100%;
+   padding-top: 2rem;
+   margin-bottom: 2rem;
+   justify-content: space-evenly;
+   background: $fondo-principal;
+   background: $fondo-principal2;
+   display: grid;
+   grid-template-rows: repeat(200px 200px);
+   grid-template-columns:repeat(25px 50px 25px) ;
+   grid-template-areas: 
+   "elem1 elem2 elem3"
+   "elem4 elem4 elem4";
+
+   &__caja{
+      width: 300px;
+      margin: 1rem;
+      padding: 1rem;
+      font-family: 'Inter', sans-serif;
+      border: 3px outset white;
+      border-bottom: none;
+      border-radius:10px;
+      color: white;
+      margin-bottom: 3rem;
+      background: rgb(0,0,0);
+      background: linear-gradient(0deg, rgba(0,0,0,1) 33%, rgba(27,21,102,1) 70%);
+  }
+
+   &__div1{
+      grid-area: elem1;
+      height: 310px;
+   }
+   &__div1:hover{
+      transform: scale(1.1);
+      transition: 1s;
+  }
+   &__div2{
+      grid-area: elem2;
+      height: 310px;
+   }
+   &__div2:hover{
+      transform: scale(1.1);
+      transition: 1s;
+  }
+   &__div3{
+      grid-area: elem3;
+      height: 340px;
+   }
+   &__div3:hover{
+      transform: scale(1.1);
+      transition: 1s;
+  }
+   &__divtitulo{
+      color: rgb(255, 255, 255);
+      text-decoration: underline;
+      text-align: center;
+      font-size:35px ;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+   }
+   &__divparrafo{
+      text-align: center;
+      font-size:18px ;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   &__span-precio{
+      font-size: 25px;
+      font-weight: 700;
+      color: darkorchid;
+   }
+   &__span{
+      margin-top: 2rem;
+      grid-area: elem4;
+      text-align: center;
+      font-size: 12px;
+   }
+   &__buttom{
+      width: 100%;
+      background-color: darkslateblue;
+      color: white;
+      padding: 15px;
+      border-radius: 7px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 18px;
+   }
+}

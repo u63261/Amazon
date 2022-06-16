@@ -1,0 +1,47 @@
+.header{
+     width: $ancho;
+     padding: 1rem;
+     background-color:black;
+     display:flex;
+     justify-content:space-between;
+     position: fixed;
+     z-index: 100;
+
+     &__logo{
+        width: 70px;
+        height: 70px;
+        border-radius: 10px;
+     }
+     &__nav{
+         display: flex;
+         flex-direction:row;
+         gap: 1rem;
+     } 
+     &__open{
+        display: none;
+        font-size: 25px;
+        color: rgb(252, 246, 246);
+     }
+     &__close{
+        display: none;
+     }
+     &__lenguaje{
+        height: 35px;
+        width: 130px;
+     } 
+     &__ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+     }
+     &__li{
+        font-family: 'Inter', sans-serif;
+        color: rgb(253, 251, 251);
+        text-decoration: none;
+     } 
+     &__li:hover{
+        color:brown;
+        text-decoration: overline;
+     }
+}    

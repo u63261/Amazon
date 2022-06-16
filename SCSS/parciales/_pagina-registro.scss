@@ -1,0 +1,90 @@
+.registro{
+    background: rgb(32,30,148);
+    background: linear-gradient(208deg, rgba(32,30,148,1) 30%, rgba(30,135,148,1) 71%);
+    width: $ancho;
+    height: $alto; 
+    padding: 50px;
+
+
+        &__formulario{
+            background-color: black;
+            width: 550px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+            margin:auto;
+            color: $color-letra;
+            border: 1px solid silver;
+            font-size: 20px; 
+        } 
+        &__logo{
+            width: 105px;
+            height: 105px;
+            margin: auto;
+            padding: 10px;
+        }
+        &__titulo1{
+            margin-bottom: 45px;
+            font-size: 35px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+        &__titulo2{
+          font-size:20px ;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          margin-left: 25px;
+        }
+        &__link{
+          font-size: 20px;
+          position: relative;
+          left: 25px;
+        }
+         &__parrafo{
+          font-size: 18px;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          margin: 15px;
+        }
+        &__casilla{
+          width: 90%;
+          height: 50px;
+          border-radius: 5px;
+          margin: auto;
+          margin-bottom: 5px;
+          margin-top: 5px;
+        }
+        &__boton1{
+          width: 200px;
+          height: 50px;
+          position: relative;
+          left: 170px;
+          background-color: burlywood;
+          border-radius: 3px;
+          margin-top: 15px;
+        }
+        &__boton2{
+          width: 300px;
+          height: 50px; 
+          position: relative;
+          left: 120px;
+          background-color: rgb(243, 241, 237);
+          border-radius: 3px;
+          margin-top: 5px;
+          margin-bottom: 15px;
+        }
+        &__recuerdame{
+            display: block;
+            position: relative;
+            left: 190px;
+        }
+        &__checkbox{
+            display: block;
+            position: relative;
+            left: 320px;
+            top: -20px;
+        }
+        &__span{
+          color: grey;
+          margin-left: 155px;
+        }
+}    

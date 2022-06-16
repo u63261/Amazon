@@ -1,0 +1,24 @@
+
+$ancho:100%;
+$alto:100%;
+$fondo-principal: rgb(3,0,0);
+$fondo-principal2:linear-gradient(188deg, rgba(3,0,0,1) 30%, rgba(30,131,148,1) 76%);
+$color-letra:white;
+$fuente:'Inter', sans-serif;
+
+$redes:(
+instagram: violet,
+twitter:blue,
+facebook:white,
+youtube:red
+);
+
+@each $clave, $valor in $redes {
+    .footer__section--link-#{$clave} {
+        color: $valor;
+        font-size: 35px;
+        margin-left: 3px;
+        text-decoration: none;
+    }
+}
+
